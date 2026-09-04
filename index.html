@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tu Cita Fácil </title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,700;1,9..144,300;1,9..144;600&display=swap" rel="stylesheet" />
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <!-- ==================== NAVBAR ==================== -->
+    <nav id="navbar">
+        <div class="nav-container">
+          <div class="nav-brand">
+    <div class="brand-icon">
+        <img src="img/logo.jpg" alt="Tu Cita Fácil Logo" style="width: 42px; height: 52px; object-fit: contain;">
+    </div>
+    <span class="brand-text"><span style="color: #80e2d7">Tu Cita Fácil</span></span>
+</div>
+
+            <div class="nav-links" id="navLinks">
+                <a href="#inicio" class="nav-link active" data-section="inicio">Inicio</a>
+                <a href="#servicios" class="nav-link" data-section="servicios">Servicios</a>
+                <a href="#citas" class="nav-link" data-section="citas">Tipos de Citas</a>
+                <a href="#calendario" class="nav-link" data-section="calendario">Agendar</a>
+                <a href="#ubicacion" class="nav-link" data-section="ubicacion">Ubicación</a>
+            </div>
+
+            <div class="nav-actions">
+                <a href="tel:+573229146229" class="nav-phone">
+                    <svg class="icon-sm" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    <span>3229146229</span>
+                </a>
+                <a href="#calendario" class="btn-primary nav-cta">Agendar Cita</a>
+                <button class="nav-toggle" id="navToggle">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+                </button>
+            </div>
+        </div>
+        <div class="nav-mobile" id="navMobile">
+            <a href="#inicio" class="nav-link" data-section="inicio">Inicio</a>
+            <a href="#servicios" class="nav-link" data-section="servicios">Servicios</a>
+            <a href="#citas" class="nav-link" data-section="citas">Tipos de Citas</a>
+            <a href="#calendario" class="nav-link" data-section="calendario">Agendar</a>
+            <a href="#ubicacion" class="nav-link" data-section="ubicacion">Ubicación</a>
+            <a href="#calendario" class="btn-primary nav-mobile-cta">Agendar Cita</a>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO ==================== -->
+    <section id="inicio" class="hero">
+
+        <div class="hero-bg"><img src="img/Paginas-web-para-medicos.jpg"alt="Doctor atendiendo a un paciente" />
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-badge">
+                    <svg class="badge-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                </div>
+                <h1> <span style="color: #80e2d7;">Tu salud,esta segura en nuestras manos</span></h1>
+                <p>Agenda, cancela y gestiona tus citas médicas desde cualquier lugar. Recordatorios automáticos, calendario en tiempo real y atención personalizada.</p>
+                <div class="hero-buttons">
+                    <a href="#calendario" class="btn-primary btn-lg">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                        Agendar Cita Ahora
+                    </a>
+                    <a href="#servicios" class="btn-secondary btn-lg">
+                        Ver Servicios
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                    </a>
+                </div>
+                <div class="hero-trust">
+                    <div class="trust-item">
+                        <svg class="trust-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+                        <span>Datos protegidos</span>
+                    </div>
+                    <div class="trust-item">
+                        <svg class="trust-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        <span>Disponible 24/7</span>
+                    </div>
+                    <div class="trust-item">
+                        <svg class="trust-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        <span>Confirmación inmediata</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stats-card">
+                    <p class="stats-label">Por qué elegirnos</p>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-value" style="color: #d171e9;">100%</span>
+                            <span class="stat-label"> desde cualquier lugar</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value" style="color: #64f7de;">+6</span>
+                            <span class="stat-label">Especialidades médicas</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value" style="color: #e2e47a;">+60%</span>
+                            <span class="stat-label">Ahorro de tiempo</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value" style="color: #F59E0B;">24/7</span>
+                            <span class="stat-label">Atencion disponible</span>
+                        </div>
+                    </div>
+                   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SERVICIOS ==================== -->
+    <section id="servicios" class="servicios">
+        <div class="section-header">
+            <span class="section-badge">Tipos de Atención</span>
+            <h2>Especialidades a tu alcance</h2>
+            <p>Encuentra el especialista que necesitas.</p>
+        </div>
+        <div class="servicios-grid">
+            <!-- Servicio 1 -->
+            <div class="servicio-card" style="background-color: #f0fdfa;">
+                <div class="servicio-icon" style="background-color: #0A8B7C18;">
+                    <svg style="color: #0A8B7C;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                </div>
+                <h3>Medicina General</h3>
+                <p>Consultas preventivas, diagnóstico y tratamiento de enfermedades comunes.</p>
+            </div>
+            <!-- Servicio 2 -->
+            <div class="servicio-card" style="background-color: #f5f3ff;">
+                <div class="servicio-icon" style="background-color: #7C3AED18;">
+                    <svg style="color: #7C3AED;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1M9 18h6"/><path d="M13 22c-1.1 0-2-.9-2-2v-1"/></svg>
+                </div>
+                <h3>Psicología</h3>
+                <p>Atención en salud mental, terapia individual, familiar y de pareja.</p>
+            </div>
+            <!-- Servicio 3 -->
+            <div class="servicio-card" style="background-color: #f0f9ff;">
+                <div class="servicio-icon" style="background-color: #0284C718;">
+                    <svg style="color: #0284C7;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1M9 18h6"/><path d="M13 22c-1.1 0-2-.9-2-2v-1"/></svg>
+                </div>
+                <h3>Odontología</h3>
+                <p>Limpieza, ortodoncia, blanqueamiento y cirugías orales especializadas.</p>
+            </div>
+            <!-- Servicio 4 -->
+            <div class="servicio-card" style="background-color: #fff1f2;">
+                <div class="servicio-icon" style="background-color: #DC262618;">
+                    <svg style="color: #DC2626;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                </div>
+                <h3>Cardiología</h3>
+                <p>Diagnóstico y seguimiento de enfermedades cardiovasculares.</p>
+            </div>
+        
+            <!-- Servicio 5 -->
+            <div class="servicio-card" style="background-color: #fffbeb;">
+                <div class="servicio-icon" style="background-color: #D9770618;">
+                    <svg style="color: #D97706;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                </div>
+                <h3>Pediatría</h3>
+                <p>Cuidado integral de la salud infantil desde el nacimiento hasta los 18 años.</p>
+            </div>
+            <!-- Servicio 6 -->
+            <div class="servicio-card" style="background-color: #ecfdf5;">
+                <div class="servicio-icon" style="background-color: #05966918;">
+                    <svg style="color: #95e97b;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1M9 18h6"/><path d="M13 22c-1.1 0-2-.9-2-2v-1"/></svg>
+                </div>
+                <h3>Ortopedia</h3>
+                <p>Tratamiento de lesiones y enfermedades del sistema musculoesquelético.</p>
+            </div>
+            <!-- Servicio 7 -->
+            <div class="servicio-card" style="background-color: #fffbeb;">
+                <div class="servicio-icon" style="background-color: #B4530918;">
+                    <svg style="color: #ee7ed6;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                </div>
+                <h3>Enfermeria/Planificacion</h3>
+                <p>Atencion y cuidados necesarios para los usuarios </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TIPOS DE CITA ==================== -->
+    <section id="citas" class="tipos-cita">
+        <div class="section-header">
+            <span class="section-badge">Tipos de Citas</span>
+            <h2>Elige el formato que más <span style="font-style: italic; color: #0A8B7C;">te convenga</span></h2>
+            <p>Ofrecemos múltiples modalidades de atención para adaptarnos a tus necesidades.</p>
+        </div>
+
+        <div class="tabs-container">
+            <div class="tabs" id="tabsContainer">
+                <button class="tab active" data-tipo="presencial" style="border-color: #48a1dd;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                    Presencial
+                </button>
+                <button class="tab" data-tipo="virtual" style="border-color: #7C3AED;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+                    Virtual / Telemedicina
+                </button>
+                <button class="tab" data-tipo="urgente" style="border-color: #DC2626;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                    Urgente
+                </button>
+                <button class="tab" data-tipo="seguimiento" style="border-color: #D97706;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
+                    Seguimiento
+                </button>
+            </div>
+        </div>
+
+        <div class="tab-content" id="tabContent">
+            <!-- Content loaded by JS -->
+        </div>
+    </section>
+
+    <!-- ==================== CÓMO AGENDAR ==================== -->
+    <section class="como-agendar">
+        <div class="como-agendar-bg"></div>
+        <div class="como-agendar-content">
+            <div class="section-header" style="color: white;">
+                <span class="section-badge" style="background: #0A8B7C20; border-color: #0A8B7C40; color: #5eead4;">Proceso de Agendación</span>
+                <h2 style="color: white;">Agenda en 4 pasos simples</h2>
+                <p style="color: #94a3b8;">Nuestro proceso es rápido, intuitivo y sin complicaciones.</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">01</div>
+                    <div class="step-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    </div>
+                    <h3>Elige tu especialidad</h3>
+                    <p>Selecciona el tipo de atención y la especialidad que necesitas de nuestro catálogo.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">02</div>
+                    <div class="step-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                    </div>
+                    <h3>Selecciona fecha y hora</h3>
+                    <p>Consulta el calendario de disponibilidad y elige el horario que mejor se adapte a ti.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">03</div>
+                    <div class="step-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    </div>
+                    <h3>Confirma tus datos</h3>
+                    <p>Ingresa tu información y completa el proceso de reserva en menos de 2 minutos.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">04</div>
+                    <div class="step-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+                    </div>
+                    <h3>Recibe recordatorios</h3>
+                    <p>Te notificamos por WhatsApp, email y SMS para que nunca olvides tu cita.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CALENDARIO ==================== -->
+    <section id="calendario" class="calendario">
+        <div class="section-header">
+            <span class="section-badge">Agenda tu Cita</span>
+            <h2>Reserva en tiempo real</h2>
+            <p>Selecciona la fecha, hora y especialidad. Es rápido, sencillo y seguro.</p>
+        </div>
+
+        <div id="calendarApp">
+            <!-- Rendered by JS -->
+        </div>
+    </section>
+
+    <!-- ==================== RECORDATORIOS ==================== -->
+    <section class="recordatorios">
+        <div class="recordatorios-content">
+            <div class="recordatorios-text">
+                <span class="section-badge">Recordatorios Automáticos</span>
+                <h2>Nunca más olvides <span style="font-style: italic; color: #0A8B7C;">una cita</span></h2>
+                <p>Nuestro sistema envía recordatorios automáticos a través de múltiples canales. Tú decides cuándo y cómo quieres que te avisemos.</p>
+                <div class="recordatorios-channels">
+                    <div class="channel">
+                        <div class="channel-icon" style="background-color: #25D36615;">
+                            <svg style="color: #25D366;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="4"/><line x1="6" y1="9" x2="6" y2="15"/><line x1="10" y1="9" x2="10" y2="15"/><line x1="14" y1="9" x2="14" y2="15"/><line x1="18" y1="9" x2="18" y2="15"/></svg>
+                        </div>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <p>Recibe un mensaje 24h y 1h antes de tu cita directamente en WhatsApp.</p>
+                        </div>
+                    </div>
+                    <div class="channel">
+                        <div class="channel-icon" style="background-color: #0284C715;">
+                            <svg style="color: #0284C7;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        </div>
+                        <div>
+                            <h4>Correo Electrónico</h4>
+                            <p>Confirmación y recordatorio completo con todos los detalles de tu cita.</p>
+                        </div>
+                    </div>
+                    <div class="channel">
+                        <div class="channel-icon" style="background-color: #7C3AED15;">
+                            <svg style="color: #7C3AED;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                        </div>
+                        <div>
+                            <h4>SMS</h4>
+                            <p>Mensaje de texto corto con la fecha, hora y dirección de tu cita.</p>
+                        </div>
+                    </div>
+                    <div class="channel">
+                        <div class="channel-icon" style="background-color: #F59E0B15;">
+                            <svg style="color: #F59E0B;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+                        </div>
+                        <div>
+                            <h4>Notificación App</h4>
+                            <p>Push notification en tu dispositivo para que nunca pierdas tu turno.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="recordatorios-mockup">
+                <div class="mockup">
+                    <div class="mockup-header">
+                        <span>Centro de Notificaciones</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+                    </div>
+                    <div class="mockup-notification" style="border-left-color: #25D366;">
+                        <div class="mockup-icon" style="background-color: #25D36615;">
+                            <svg style="color: #25D366;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="4"/><line x1="6" y1="9" x2="6" y2="15"/><line x1="10" y1="9" x2="10" y2="15"/><line x1="14" y1="9" x2="14" y2="15"/><line x1="18" y1="9" x2="18" y2="15"/></svg>
+                        </div>
+                        <div>
+                            <div class="mockup-notification-header">
+                                <span style="color: #25D366;">WhatsApp</span>
+                                <span>hace 2 min</span>
+                            </div>
+                            <p>¡Hola María! Recuerda tu cita con el Dr. García mañana a las 10:00 AM.</p>
+                        </div>
+                    </div>
+                    <div class="mockup-notification" style="border-left-color: #0284C7;">
+                        <div class="mockup-icon" style="background-color: #0284C715;">
+                            <svg style="color: #0284C7;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        </div>
+                        <div>
+                            <div class="mockup-notification-header">
+                                <span style="color: #0284C7;">Email</span>
+                                <span>hace 1h</span>
+                            </div>
+                            <p>Confirmación de cita: Odontología — 19 de julio, 2:30 PM. Clínica Centro.</p>
+                        </div>
+                    </div>
+                    <div class="mockup-notification" style="border-left-color: #7C3AED;">
+                        <div class="mockup-icon" style="background-color: #7C3AED15;">
+                            <svg style="color: #7C3AED;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                        </div>
+                        <div>
+                            <div class="mockup-notification-header">
+                                <span style="color: #7C3AED;">SMS</span>
+                                <span>hace 3h</span>
+                            </div>
+                            <p>Tu cita con Psicología es el 22/07 a las 9:00 AM. ¿Confirmas? Responde SÍ o NO.</p>
+                        </div>
+                    </div>
+                    <div class="mockup-actions">
+                        <button class="mockup-btn confirm">Confirmar Cita</button>
+                        <button class="mockup-btn cancel">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CANCELACIÓN ==================== -->
+    <section class="cancelacion">
+        <div class="cancelacion-content">
+            <div class="cancelacion-text">
+                <span class="section-badge">Cancelación de Citas</span>
+                <h2>Política de cancelación <span style="font-style: italic; color: #0A8B7C;">flexible</span></h2>
+                <p>Entendemos que los planes cambian. Por eso nuestra política de cancelación es transparente y sin sorpresas.</p>
+                <div class="policy-grid">
+                    <div class="policy-card" style="background-color: #ecfdf5;">
+                        <svg style="color: #059669;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        <p class="policy-title">Gratis</p>
+                        <p class="policy-desc">Con más de 4h de anticipación</p>
+                    </div>
+                    <div class="policy-card" style="background-color: #fffbeb;">
+                        <svg style="color: #D97706;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                        <p class="policy-title">Cargo mínimo</p>
+                        <p class="policy-desc">Menos de 4h de anticipación</p>
+                    </div>
+                    <div class="policy-card" style="background-color: #f0f9ff;">
+                        <svg style="color: #0284C7;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
+                        <p class="policy-title">Reprogramar</p>
+                        <p class="policy-desc">Hasta 2h antes, sin costo</p>
+                    </div>
+                    <div class="policy-card" style="background-color: #fff1f2;">
+                        <svg style="color: #DC2626;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                        <p class="policy-title">No-show</p>
+                        <p class="policy-desc">Cargo completo de consulta</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cancelacion-faq">
+                <h3>Preguntas frecuentes</h3>
+                <div class="faq-list" id="faqList">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>¿Hasta cuándo puedo cancelar mi cita sin penalidad?</span>
+                            <svg class="faq-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Puedes cancelar tu cita sin costo hasta 4 horas antes del horario programado. Cancelaciones posteriores pueden generar un cargo mínimo de gestión.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>¿Cómo cancelo mi cita?</span>
+                            <svg class="faq-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Puedes hacerlo desde nuestro sitio web en la sección "Mis Citas", respondiendo NO al mensaje de recordatorio, llamando a nuestra línea de atención o visitando personalmente nuestra clínica.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>¿Puedo reprogramar en lugar de cancelar?</span>
+                            <svg class="faq-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sí. Te recomendamos reprogramar en vez de cancelar para mantener continuidad en tu atención. Puedes hacerlo hasta 2 horas antes de tu cita.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>¿Qué pasa si el médico cancela la cita?</span>
+                            <svg class="faq-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Si el médico cancela, te notificamos de inmediato y te ofrecemos una nueva fecha prioritaria o la opción de atenderte con otro especialista disponible.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cancelacion-contact">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    <div>
+                        <p class="contact-title">Cancelación telefónica</p>
+                        <p class="contact-desc">Llama a <strong>3229146229</strong> de lunes a sábado de 7:00 AM a 7:00 PM para cancelar o reprogramar.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== UBICACIÓN ==================== -->
+    <section id="ubicacion" class="ubicacion">
+        <div class="section-header" style="color: white;">
+            <span class="section-badge" style="background: #0A8B7C20; border-color: #0A8B7C40; color: #5eead4;">Dónde Estamos</span>
+            <h2 style="color: white;">Visítanos en persona</h2>
+            <p style="color: #94a3b8;">Contamos con nuestra unica instalacion moderna, accesibles y bien ubicada para atenderte.</p>
+        </div>
+
+        <div class="ubicacion-grid">
+            <div class="ubicacion-main">
+                <img src="img/IMG-20260815-WA0039.jpg" alt="Centro Médico Tu Cita Fácil" />
+                <div class="ubicacion-main-overlay">
+                    <div class="ubicacion-main-badge">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        Unica sede
+                    </div>
+                    <h3>Tu Cita Fácil</h3>
+                    <p>via cota-siberia </p>
+                </div>
+            </div>
+    
+        
+                <div class="ubicacion-card">
+                    <div class="ubicacion-card-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        <span>Contacto</span>
+                    </div>
+                    <div class="ubicacion-contact-list">
+                        <a href="tel:+573229156262">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            3229146229
+                        </a>
+                        <a href="tel:+573207077106">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            3207077106
+                        </a>
+                        <a href="tucitafacil4@gmail.com">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            tucitafacil4@gmail.com
+                        </a>
+                           <div class="ubicacion-hours">
+                        <div><span>Lunes – Domingo</span>
+                            <span> Atencion24/7 </span></div>  
+                    </div>
+                </div>
+                    </div>
+                </div>
+                <div class="ubicacion-card">
+                    <div class="ubicacion-card-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        <span>Cómo llegar</span>
+                    </div>
+                    <p>Estamos ubicados por la via de cota-siberia ,a 3 minutos de colegio jose max leon</p>
+                    <button class="ubicacion-maps-btn">
+                        <a href="https://maps.app.goo.gl/qiyGT4YwDyu72TW69?g_st=aw" class="ubicacion-maps-btn" target="_blank">
+                        ver en Google Maps                      </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CTA BANNER ==================== -->
+    <section class="cta-banner">
+        <div class="cta-bg"></div>
+        <div class="cta-content">
+            <h2>¿Listo para agendar tu cita?</h2>
+            <p>Más de 300 mil pacientes ya confían en Tu Cita Fácil. Únete hoy y toma el control de tu salud.</p>
+            <div class="cta-buttons">
+                <a href="#calendario" class="btn-primary btn-lg cta-btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                    Agendar Ahora — Es Gratis
+                </a>
+                <a href="tel:+573001234567" class="btn-secondary btn-lg cta-btn-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    Llamar: 3229146229
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="footer-brand-inner">
+                    <div class="brand-icon">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                    </div>
+                    <span>Tu Cita Fácil</span>
+                </div>
+                <p>La plataforma líder de agendación médica. Tu salud, nuestra prioridad.</p>
+                <div class="footer-social">
+                        <ul>
+                            <li><a href="https://www.instagram.com/tucitafacil4?igsh=dmxnY2xxZmwyNjBz ">
+ <span>instagram</span>
+    </a></li>
+                               <li><a href="https://www.facebook.com/share/1JwoyHaDU5/">
+ <span>Facebook</span>
+    </a></li>
+    <li><a href="https://youtube.com/@tucitafacil?si=nC9mTbWw8tdGWXQ8">
+<span>youtube</span>
+</a></li>
+<li>correo: tucitafacil4@gmail.com</li>
+   
+                        </ul>
+                        
+                    </div>
+    
+                
+                    
+                    </div>
+                    <div>
+                    <ul>
+                     <li><a href="#">Laury Quintero</a></li>
+                      <li><a href="#">Maria Jose Balcero</a></li>
+                       <li><a href="#">Sebastian Cruz</a></li>
+                       </ul>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <div>
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#">Medicina General</a></li>
+                        <li><a href="#">Psicología</a></li>
+                        <li><a href="#">Odontología</a></li>
+                        <li><a href="#">Cardiología</a></li>
+                        <li><a href="#">Pediatría</a></li>
+                         <li><a href="#">Enfermeria-planificacion</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Plataforma</h4>
+                    <ul>
+                        <li><a href="#">Agendar cita</a></li>
+                        <li><a href="#">Cancelar cita</a></li>
+                        <li><a href="#">Recordatorios</a></li>
+                        <li><a href="#">Telemedicina</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Información</h4>
+                    <ul>
+                        <li><a href="#">Política de privacidad</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                        <li><a href="#">Trabaja con nosotros</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Tu Cita Fácil. Todos los derechos reservados.</p>
+            <p>Hecho con cuidado para tu salud 🏥</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
