@@ -98,6 +98,26 @@ const navbar = document.getElementById('navbar');
 
 // ─── NAVIGATION ────────────────────────────────────────────────────────
 
+function applyNavTheme() {
+    const scrolled = window.scrollY > 40;
+    const links = document.querySelectorAll('.nav-link');
+
+    links.forEach(link => {
+        const active = link.classList.contains('active');
+        link.style.color = scrolled ? (active ? '#0A8B7C' : '#475569') : '#ffffff';
+        link.style.background = scrolled ? (active ? '#f0fdfa' : 'transparent') : (active ? 'rgba(255,255,255,0.12)' : 'transparent');
+    });
+
+    const phone = document.querySelector('.nav-phone');
+    if (phone) {
+        phone.style.color = scrolled ? '#475569' : '#ffffff';
+        const phoneIcon = phone.querySelector('svg');
+        if (phoneIcon) {
+            phoneIcon.style.color = scrolled ? '#475569' : '#dffdf7';
+        }
+    }
+}
+
 function initNavigation() {
     // Desktop nav links
     document.querySelectorAll('.nav-link').forEach(link => {
@@ -112,6 +132,7 @@ function initNavigation() {
             document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
             link.classList.add('active');
             state.activeSection = section;
+            applyNavTheme();
             // Close mobile menu
             closeMobileMenu();
         });
@@ -130,7 +151,10 @@ function initNavigation() {
     window.addEventListener('scroll', () => {
         const scrolled = window.scrollY > 40;
         navbar.classList.toggle('scrolled', scrolled);
+        applyNavTheme();
     });
+
+    applyNavTheme();
 
     // Intersection Observer for section detection
     const sections = ['inicio', 'servicios', 'citas', 'calendario', 'ubicacion'];

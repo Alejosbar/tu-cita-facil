@@ -20,11 +20,11 @@
     <!-- ==================== NAVBAR ==================== -->
     <nav id="navbar">
         <div class="nav-container">
-          <div class="nav-brand">
+          <div class="nav-brand" aria-label="Tu Cita Fácil">
     <div class="brand-icon">
-        <img src="img/logo.jpg" alt="Tu Cita Fácil Logo" style="width: 42px; height: 52px; object-fit: contain;">
+        <img src="img/logo.jpg" alt="Tu Cita Fácil Logo" class="brand-logo">
     </div>
-    <span class="brand-text"><span style="color: #80e2d7">Tu Cita Fácil</span></span>
+    <span class="brand-text">Tu Cita Fácil</span>
 </div>
 
             <div class="nav-links" id="navLinks">
@@ -200,19 +200,19 @@
 
         <div class="tabs-container">
             <div class="tabs" id="tabsContainer">
-                <button class="tab active" data-tipo="presencial" style="border-color: #48a1dd;">
+                <button class="tab active" data-tipo="presencial" style="--tab-color: #48a1dd; border-color: #48a1dd;">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
                     Presencial
                 </button>
-                <button class="tab" data-tipo="virtual" style="border-color: #7C3AED;">
+                <button class="tab" data-tipo="virtual" style="--tab-color: #7C3AED; border-color: #7C3AED;">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
                     Virtual / Telemedicina
                 </button>
-                <button class="tab" data-tipo="urgente" style="border-color: #DC2626;">
+                <button class="tab" data-tipo="urgente" style="--tab-color: #DC2626; border-color: #DC2626;">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
                     Urgente
                 </button>
-                <button class="tab" data-tipo="seguimiento" style="border-color: #D97706;">
+                <button class="tab" data-tipo="seguimiento" style="--tab-color: #D97706; border-color: #D97706;">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
                     Seguimiento
                 </button>
@@ -234,38 +234,38 @@
                 <p style="color: #94a3b8;">Nuestro proceso es rápido, intuitivo y sin complicaciones.</p>
             </div>
             <div class="steps">
-                <div class="step">
+                <a class="step" href="#servicios" aria-label="Ir a servicios y especialidades">
                     <div class="step-number">01</div>
                     <div class="step-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
                     </div>
                     <h3>Elige tu especialidad</h3>
                     <p>Selecciona el tipo de atención y la especialidad que necesitas de nuestro catálogo.</p>
-                </div>
-                <div class="step">
+                </a>
+                <a class="step" href="#calendario" aria-label="Ir al calendario para seleccionar fecha y hora">
                     <div class="step-number">02</div>
                     <div class="step-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
                     </div>
                     <h3>Selecciona fecha y hora</h3>
                     <p>Consulta el calendario de disponibilidad y elige el horario que mejor se adapte a ti.</p>
-                </div>
-                <div class="step">
+                </a>
+                <a class="step" href="#calendario" aria-label="Ir al calendario para confirmar tus datos">
                     <div class="step-number">03</div>
                     <div class="step-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
                     </div>
                     <h3>Confirma tus datos</h3>
                     <p>Ingresa tu información y completa el proceso de reserva en menos de 2 minutos.</p>
-                </div>
-                <div class="step">
+                </a>
+                <a class="step" href="#calendario" aria-label="Ir al calendario para completar tu cita">
                     <div class="step-number">04</div>
                     <div class="step-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
                     </div>
                     <h3>Recibe recordatorios</h3>
                     <p>Te notificamos por WhatsApp, email y SMS para que nunca olvides tu cita.</p>
-                </div>
+                </a>
             </div>
         </div>
     </section>
@@ -497,7 +497,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                             3207077106
                         </a>
-                        <a href="tucitafacil4@gmail.com">
+                        <a href="mailto:tucitafacil4@gmail.com">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                             tucitafacil4@gmail.com
                         </a>
@@ -514,13 +514,10 @@
                         <span>Cómo llegar</span>
                     </div>
                     <p>Estamos ubicados por la via de cota-siberia ,a 3 minutos de colegio jose max leon</p>
-                    <button class="ubicacion-maps-btn">
-                        <a href="https://maps.app.goo.gl/qiyGT4YwDyu72TW69?g_st=aw" class="ubicacion-maps-btn" target="_blank">
-                        ver en Google Maps                      </a>
-                    </button>
+                    <a href="https://maps.app.goo.gl/qiyGT4YwDyu72TW69?g_st=aw" class="ubicacion-maps-btn" target="_blank" rel="noopener noreferrer">
+                        Ver en Google Maps
+                    </a>
                 </div>
-            </div>
-        </div>
             </div>
         </div>
     </section>
@@ -536,7 +533,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
                     Agendar Ahora — Es Gratis
                 </a>
-                <a href="tel:+573001234567" class="btn-secondary btn-lg cta-btn-secondary">
+                <a href="tel:+573229146229" class="btn-secondary btn-lg cta-btn-secondary">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                     Llamar: 3229146229
                 </a>
@@ -556,25 +553,25 @@
                 </div>
                 <p>La plataforma líder de agendación médica. Tu salud, nuestra prioridad.</p>
                 <div class="footer-social">
-                        <ul>
-                            <li><a href="https://www.instagram.com/tucitafacil4?igsh=dmxnY2xxZmwyNjBz ">
- <span>instagram</span>
-    </a></li>
-                               <li><a href="https://www.facebook.com/share/1JwoyHaDU5/">
- <span>Facebook</span>
-    </a></li>
-    <li><a href="https://youtube.com/@tucitafacil?si=nC9mTbWw8tdGWXQ8">
-<span>youtube</span>
-</a></li>
-<li>correo: tucitafacil4@gmail.com</li>
-   
-                        </ul>
-                        
-                    </div>
-    
-                
-                    
-                    </div>
+                    <a href="https://www.instagram.com/tucitafacil4?igsh=dmxnY2xxZmwyNjBz" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <rect x="2" y="2" width="20" height="20" rx="5"></rect>
+                            <circle cx="12" cy="12" r="4.5"></circle>
+                            <circle cx="17.5" cy="6.5" r="1"></circle>
+                        </svg>
+                    </a>
+                    <a href="https://www.facebook.com/share/1JwoyHaDU5/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M14 8h3V4h-3c-3.3 0-5 2.1-5 5.4V12H6v4h3v6h4v-6h3l1-4h-4V9.5c0-1 .6-1.5 2-1.5z"></path>
+                        </svg>
+                    </a>
+                    <a href="https://youtube.com/@tucitafacil?si=nC9mTbWw8tdGWXQ8" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M21.6 7.2a2.8 2.8 0 0 0-1.9-2c-1.7-.5-8.7-.5-8.7-.5s-7 0-8.7.5a2.8 2.8 0 0 0-1.9 2A29.4 29.4 0 0 0 0 12a29.4 29.4 0 0 0 .4 4.8 2.8 2.8 0 0 0 1.9 2c1.7.5 8.7.5 8.7.5s7 0 8.7-.5a2.8 2.8 0 0 0 1.9-2A29.4 29.4 0 0 0 24 12a29.4 29.4 0 0 0-.4-4.8zM9.8 15.5v-7l6.2 3.5-6.2 3.5z"></path>
+                        </svg>
+                    </a>
+                    <a href="mailto:tucitafacil4@gmail.com" aria-label="Correo">correo: tucitafacil4@gmail.com</a>
+                </div>
                     <div>
                     <ul>
                      <li><a href="#">Laury Quintero</a></li>

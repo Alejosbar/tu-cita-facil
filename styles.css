@@ -136,6 +136,21 @@ img {
     transition: all 0.3s ease;
     background: transparent;
 }
+#navbar .nav-brand .brand-text,
+#navbar .nav-link,
+#navbar .nav-link.active,
+#navbar .nav-link:hover,
+#navbar .nav-phone,
+#navbar .nav-phone span {
+    color: #ffffff !important;
+}
+#navbar .nav-phone svg {
+    color: #dffdf7;
+}
+#navbar .nav-link:hover,
+#navbar .nav-link.active {
+    background: rgba(255, 255, 255, 0.12);
+}
 #navbar.scrolled {
     background: rgba(255,255,255,0.95);
     backdrop-filter: blur(12px);
@@ -144,8 +159,15 @@ img {
 }
 #navbar.scrolled .nav-brand .brand-text,
 #navbar.scrolled .nav-link,
+#navbar.scrolled .nav-link.active,
+#navbar.scrolled .nav-link:hover,
 #navbar.scrolled .nav-phone span {
-    color: #0D1F1D;
+    color: #0D1F1D !important;
+}
+#navbar.scrolled .nav-link:hover,
+#navbar.scrolled .nav-link.active {
+    background: #f0fdfa;
+    color: #0A8B7C !important;
 }
 
 .nav-container {
@@ -163,20 +185,30 @@ img {
     gap: 8px;
 }
 .brand-icon {
-    width: 36px;
-    height: 36px;
+    width: 42px;
+    height: 52px;
     border-radius: 12px;
-    background: #0A8B7C;
+    background: transparent;
+    border: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    overflow: hidden;
+    box-shadow: none;
+}
+.brand-logo {
+    width: 42px;
+    height: 52px;
+    object-fit: contain;
+    display: block;
+    filter: drop-shadow(0 2px 6px rgba(0,0,0,0.12));
 }
 .brand-text {
     font-family: 'Fraunces', serif;
     font-size: 20px;
     font-weight: 700;
-    color: #0D1F1D;
+    color: #f8fffe;
+    letter-spacing: -0.02em;
 }
 
 .nav-links {
@@ -189,21 +221,21 @@ img {
     border-radius: 8px;
     font-size: 14px;
     font-weight: 500;
-    color: #475569;
+    color: #ffffff !important;
     transition: all 0.2s ease;
 }
 .nav-link:hover,
 .nav-link.active {
-    background: #f0fdfa;
-    color: #0A8B7C;
+    background: rgba(255, 255, 255, 0.12);
+    color: #ffffff !important;
 }
 #navbar.scrolled .nav-link {
-    color: #475569;
+    color: #475569 !important;
 }
 #navbar.scrolled .nav-link:hover,
 #navbar.scrolled .nav-link.active {
     background: #f0fdfa;
-    color: #0A8B7C;
+    color: #0A8B7C !important;
 }
 
 .nav-actions {
@@ -216,11 +248,11 @@ img {
     align-items: center;
     gap: 6px;
     font-size: 14px;
-    color: #475569;
+    color: #f8fffe;
     transition: color 0.2s ease;
 }
 .nav-phone:hover {
-    color: #0A8B7C;
+    color: #dffdf7;
 }
 #navbar.scrolled .nav-phone {
     color: #475569;
@@ -498,12 +530,17 @@ img {
     transition: all 0.2s ease;
 }
 .tab:hover {
-    border-color: #94a3b8;
+    border-color: var(--tab-color, #94a3b8);
+    color: var(--tab-color, #475569);
 }
 .tab.active {
     color: white;
-    border-color: transparent;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    background: var(--tab-color, #0A8B7C);
+    border-color: var(--tab-color, #0A8B7C);
+    box-shadow: 0 8px 18px rgba(15, 23, 42, 0.12);
+}
+.tab.active svg {
+    color: white;
 }
 .tab svg {
     width: 16px;
@@ -628,10 +665,16 @@ img {
     background: rgba(255,255,255,0.05);
     border: 1px solid rgba(255,255,255,0.1);
     border-radius: 16px;
+    color: inherit;
+    text-decoration: none;
     transition: all 0.3s ease;
 }
-.step:hover {
+.step:hover,
+.step:focus-visible {
     background: rgba(255,255,255,0.1);
+    border-color: rgba(94,234,212,0.55);
+    outline: none;
+    transform: translateY(-3px);
 }
 .step-number {
     font-family: 'Fraunces', serif;
@@ -1590,24 +1633,49 @@ img {
 }
 .footer-social {
     display: flex;
+    align-items: center;
     gap: 12px;
+    flex-wrap: wrap;
 }
-.footer-social span {
+.footer-social a {
     width: 32px;
     height: 32px;
     border-radius: 8px;
     background: rgba(255,255,255,0.1);
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-size: 12px;
-    font-weight: 700;
     color: #cbd5e1;
-    cursor: pointer;
-    transition: background 0.2s;
+    transition: all 0.2s ease;
 }
-.footer-social span:hover {
+.footer-social a:hover {
     background: rgba(10,139,124,0.3);
+    color: white;
+    transform: translateY(-1px);
+}
+.footer-social svg {
+    width: 16px;
+    height: 16px;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    fill: none;
+}
+.footer-social a[href^="mailto:"] {
+    width: auto;
+    height: auto;
+    padding: 8px 10px;
+    border-radius: 8px;
+    font-size: 12px;
+    text-decoration: none;
+    background: rgba(255,255,255,0.05);
+}
+.footer-social a[href^="mailto:"]:hover {
+    color: #5eead4;
+}
+.footer-social a[href^="https://www.facebook.com/"] svg,
+.footer-social a[href^="https://youtube.com/"] svg {
+    fill: currentColor;
+    stroke: none;
 }
 
 .footer-links {
