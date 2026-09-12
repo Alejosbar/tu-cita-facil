@@ -44,7 +44,7 @@ const TIPOS_CITA_DATA = {
         color: '#743cd6',
         desc: 'Consulta desde la comodidad de tu hogar mediante videollamada. Ideal para seguimientos y consultas de revisión.',
         features: ['Videollamada HD', 'Receta digital', 'Historial en línea', 'Sin desplazamiento'],
-        image: 'https://images.unsplash.com/photo-1758691462878-6edc3d3da1be?w=700&h=500&fit=crop&auto=format'
+        image: './img/Virtual.jpeg'
     },
     urgente: {
         id: 'urgente',
@@ -52,7 +52,7 @@ const TIPOS_CITA_DATA = {
         color: '#DC2626',
         desc: 'Para situaciones que requieren atención prioritaria. Asignamos disponibilidad inmediata con el especialista más cercano.',
         features: ['Atención en < 2h', 'Triaje médico', 'Disponible 24/7', 'Seguimiento post-cita'],
-        image: 'https://images.unsplash.com/photo-1758691461935-202e2ef6b69f?w=700&h=500&fit=crop&auto=format'
+        image: './img/Urgente.jpeg'
     },
     seguimiento: {
         id: 'seguimiento',
@@ -60,7 +60,7 @@ const TIPOS_CITA_DATA = {
         color: '#D97706',
         desc: 'Citas de control para monitorear tu evolución con el mismo médico tratante. Continuidad en tu proceso de salud.',
         features: ['Mismo especialista', 'Acceso a historial', 'Ajuste de tratamiento', 'Informes automáticos'],
-        image: 'https://images.unsplash.com/photo-1633526543814-9718c8922b7a?w=700&h=500&fit=crop&auto=format'
+        image: 'img/Seguimiento.jpeg'
     }
 };
 
