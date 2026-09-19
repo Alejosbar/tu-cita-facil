@@ -35,7 +35,7 @@ const TIPOS_CITA_DATA = {
         color: '#367ad3',
         desc: 'Visita directamente nuestras instalaciones. Atención personalizada con tu médico en un entorno cómodo y equipado.',
         features: ['Examen físico completo', 'Equipos de diagnóstico', 'Exámenes de laboratorio', 'Atención inmediata'],
-        image: './img/cancha.jpg'
+        image: './img/oficina.jpeg'
 
     },
     virtual: {
